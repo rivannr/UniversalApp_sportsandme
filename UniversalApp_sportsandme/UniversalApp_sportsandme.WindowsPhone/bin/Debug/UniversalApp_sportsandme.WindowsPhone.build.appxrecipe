@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>INKWIA_PC</Machine>
+    <WindowsUser>Ivan</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>e53e13d7-fef6-4992-9bbb-7b2e6c935df3</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\bin\Debug\UniversalApp_sportsandme.WindowsPhone.exe">
+      <PackagePath>UniversalApp_sportsandme.WindowsPhone.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\packages\Newtonsoft.Json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\packages\Microsoft.Net.Http.2.2.29\lib\wpa81\System.Net.Http.Extensions.dll">
+      <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\packages\Microsoft.Net.Http.2.2.29\lib\wpa81\System.Net.Http.Primitives.dll">
+      <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\Assets\Logo.scale-140.png">
+      <PackagePath>Assets\Logo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\Assets\Logo.scale-240.png">
+      <PackagePath>Assets\Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\Assets\SmallLogo.scale-240.png">
+      <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\Assets\SplashScreen.scale-240.png">
+      <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\Assets\Square71x71Logo.scale-100.png">
+      <PackagePath>Assets\Square71x71Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\Assets\Square71x71Logo.scale-140.png">
+      <PackagePath>Assets\Square71x71Logo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\Assets\Square71x71Logo.scale-240.png">
+      <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\Assets\StoreLogo.scale-240.png">
+      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\Assets\WideLogo.scale-240.png">
+      <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\Assets\HubBackground.theme-dark.png">
+      <PackagePath>Assets\HubBackground.theme-dark.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\Assets\HubBackground.theme-light.png">
+      <PackagePath>Assets\HubBackground.theme-light.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\Assets\LightGray.png">
+      <PackagePath>Assets\LightGray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\Assets\MediumGray.png">
+      <PackagePath>Assets\MediumGray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\Assets\DarkGray.png">
+      <PackagePath>Assets\DarkGray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\DataModel\SampleData\Rounds3365.json">
+      <PackagePath>DataModel\SampleData\Rounds3365.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\DataModel\SampleData\Tournaments9.json">
+      <PackagePath>DataModel\SampleData\Tournaments9.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\DataModel\SampleData\Rounds3366.json">
+      <PackagePath>DataModel\SampleData\Rounds3366.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\DataModel\SampleData\MatchesPast.json">
+      <PackagePath>DataModel\SampleData\MatchesPast.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\DataModel\SampleData\MatchesActual.json">
+      <PackagePath>DataModel\SampleData\MatchesActual.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\DataModel\SampleData\SampleData.json">
+      <PackagePath>DataModel\SampleData\SampleData.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\bin\Debug\AdditionPage.xbf">
+      <PackagePath>AdditionPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\bin\Debug\AuthorizationPage.xbf">
+      <PackagePath>AuthorizationPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\bin\Debug\GoalsPage.xbf">
+      <PackagePath>GoalsPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\bin\Debug\HubPage.xbf">
+      <PackagePath>HubPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\bin\Debug\InjuresAndIncidents.xbf">
+      <PackagePath>InjuresAndIncidents.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\bin\Debug\MatchPlayerPage.xbf">
+      <PackagePath>MatchPlayerPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\bin\Debug\RoundPage.xbf">
+      <PackagePath>RoundPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\bin\Debug\ItemPage.xbf">
+      <PackagePath>ItemPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\bin\Debug\TournamentsPage.xbf">
+      <PackagePath>TournamentsPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\bin\Debug\YellowCardPage.xbf">
+      <PackagePath>YellowCardPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\bin\Debug\UniversalApp_sportsandme.WindowsPhone.xr.xml">
+      <PackagePath>UniversalApp_sportsandme.WindowsPhone.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

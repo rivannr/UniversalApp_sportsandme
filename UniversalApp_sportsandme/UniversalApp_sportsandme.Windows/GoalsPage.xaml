@@ -1,0 +1,142 @@
+﻿<Page
+    x:Class="UniversalApp_sportsandme.GoalsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UniversalApp_sportsandme"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <UserControl.Resources>
+        <local:IsAutogoalToString x:Key="IsAutogoalToString"/>
+        <local:IsPenaltyToString x:Key="IsPenaltyToString"/>
+        <local:StatusToString x:Key="StatusToString"/>
+        
+    </UserControl.Resources>
+
+        <Grid x:Name="LayoutRoot">
+
+            <Grid.ChildrenTransitions>
+                <TransitionCollection>
+                    <EntranceThemeTransition/>
+                </TransitionCollection>
+            </Grid.ChildrenTransitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Title Panel -->
+            <StackPanel Grid.Row="0" Margin="19,0,0,0">
+            <Button x:Name="MainItemBack" BorderThickness="0" Content="Назад" Margin="-21,15,0,0" Click="CancelButton_Click" FontSize="24" FontFamily="Global User Interface"/>
+            <TextBlock Text="ГОЛЫ" Margin="0,10,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}"  FontFamily="Global User Interface"/>
+            </StackPanel>
+
+            <!--TODO: Content should be placed within the following grid-->
+            <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
+            <ScrollViewer x:Name="viewPanel">
+                <StackPanel  Visibility="Visible">
+                    <TextBlock Text="Фильтр по командам" FontSize="16" Margin="97,0"></TextBlock>
+                    <ComboBox Name="TeamComboBox" SelectionChanged="TeamComboBox_SelectionChanged" PlaceholderText="Добавить фильтр по команде" FontFamily="Global User Interface" Margin="97,0">
+                        <ComboBoxItem Tag="{Binding Match.team1.id}" Content="{Binding Match.team1.title}" HorizontalAlignment="Left" Width="356.666656494141"/>
+                        <ComboBoxItem Tag="{Binding Match.team2.id}" Content="{Binding Match.team2.title}" HorizontalAlignment="Left" Width="356.666656494141"/>
+                    </ComboBox>
+                    <Button x:Name="AddButton" Content="Добавить запись" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="AddButton_Click" Margin="97,0"/>
+               
+                    <ListView
+                        x:Name="mainListView"
+                        ItemsSource="{Binding dataGroupsMatchPlayer}"
+                        IsItemClickEnabled="True"
+                        ItemClick="GroupSection_ItemClick">
+                        
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Margin="0,20,0,0" Grid.Column="1" Orientation="Vertical">
+                                        <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Left">
+                                            <TextBlock Text="Гол забит" Margin="0, 0, 0, -10"  HorizontalAlignment="Left" FontStyle="Normal" FontFamily="Global User Interface" FontSize="18" Foreground="White" />
+                                        </StackPanel>
+                                        <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Left">
+
+                                            <TextBlock x:Name="Player" Text="{Binding player.full_name}" Margin="0"  HorizontalAlignment="Left"/>
+                                            <TextBlock Text="из команды" Margin="10,0,0,0"  HorizontalAlignment="Left" FontFamily="Global User Interface" />
+                                            <TextBlock Text="{Binding team.title}" Margin="15,0,0,0"  HorizontalAlignment="Left" />
+                                        </StackPanel>
+                                        <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Left">
+                                            <TextBlock Text="{Binding assName}" Margin="0,0,0,0"  HorizontalAlignment="Left" Height="22" FontFamily="Global User Interface" Foreground="#99FFFFB7"/>
+                                        </StackPanel>
+                                        <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Left">
+                                            <TextBlock Text="Минута" Margin="0,0,0,0"  HorizontalAlignment="Left" Height="22"/>
+                                            <TextBlock Text="{Binding goal.MinuteValue}" Margin="10,0,0,0"  HorizontalAlignment="Left" Height="22"/>
+                                        </StackPanel>
+                                        <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Left">
+                                            <TextBlock Text="Дополнительная минута" Margin="0"  HorizontalAlignment="Left" Height="22"/>
+                                            <TextBlock Text="{Binding goal.Addition_minuteValue}" Margin="10,0,0,0"  HorizontalAlignment="Left" Height="22"/>
+                                        </StackPanel>
+                                        <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Left">
+                                            <TextBlock Text="{Binding goal.Is_penaltyValue,  Converter={StaticResource IsPenaltyToString}}" Margin="0,0,0,0"  HorizontalAlignment="Left" Height="22" FontFamily="Global User Interface" Foreground="#99FFFFB7"/>
+                                        </StackPanel>
+                                        <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Left">
+                                            <TextBlock Text="{Binding goal.Is_autogoalValue,  Converter={StaticResource IsAutogoalToString}}" Margin="0,0,0,0"  HorizontalAlignment="Left" Height="22" FontFamily="Global User Interface" Foreground="#99FFFFB7"/>
+                                        </StackPanel>
+                                    <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Left">
+                                        <TextBlock Text="{Binding goal.objectStatus,  Converter={StaticResource StatusToString}}" Margin="0,0,0,0"  HorizontalAlignment="Left" Height="22" FontFamily="Global User Interface" Foreground="#99FF5F23"/>
+                                    </StackPanel>
+                                </StackPanel>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    
+                </StackPanel>
+            </ScrollViewer>
+            <ScrollViewer x:Name="editorPanel" Visibility="Collapsed">
+                <StackPanel  Tag="" Orientation="Vertical" Visibility="Visible">
+                    <TextBlock Text="Команда" FontSize="18"/>
+                    <ComboBox x:Name="TeamComboBoxEd" PlaceholderText="Команда" SelectionChanged="TeamComboBoxEd_SelectionChanged">
+                        <ComboBoxItem Content="{Binding Match.team1.title}" HorizontalAlignment="Left" Width="356.666656494141"/>
+                        <ComboBoxItem Content="{Binding Match.team2.title}" HorizontalAlignment="Left" Width="356.666656494141"/>
+                    </ComboBox>
+                    <TextBlock Text="Игрок" FontSize="18"/>
+                    <ComboBox x:Name="PlayerComboBoxEd" PlaceholderText="Игрок" FontFamily="Global User Interface">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{Binding full_name}" FontFamily="Segoe WP"></TextBlock>
+                                    <TextBlock Text="{Binding full_name}" FontFamily="Segoe WP"></TextBlock>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                    <TextBlock Text="Ассистент" FontSize="18"/>
+                    <ComboBox x:Name="AssistantComboBoxEd" PlaceholderText="Нет помощника" FontFamily="Global User Interface">
+                        <ComboBoxItem Content="Нет помощника" HorizontalAlignment="Left" Width="356.666656494141"/>
+                        <Button x:Name="ClearAssistButtonEd" Content="Убрать помощника" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="ClearAssistButtonEd_Click"/>
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{Binding full_name}" FontFamily="Segoe WP"></TextBlock>
+                                    <TextBlock Text="{Binding full_name}" FontFamily="Segoe WP"></TextBlock>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                    <TextBlock Text="Минута" FontFamily="Segoe WP" FontSize="18"></TextBlock>
+                    <TextBox x:Name="MinuteTextBox" Margin="0" TextWrapping="Wrap" Text="" PlaceholderText="Минута" VerticalAlignment="Stretch" TextChanged="MinuteTextBox_TextChanged"/>
+                    <TextBlock Text="Дополнительная Минута" FontFamily="Segoe WP" FontSize="18"></TextBlock>
+                    <TextBox x:Name="AdditionMinuteTextBox" Margin="0" TextWrapping="Wrap" Text="" PlaceholderText="Дополнительная минута" VerticalAlignment="Stretch" TextChanged="AdditionMinuteTextBox_TextChanged"/>
+
+                    <CheckBox x:Name="IsPenaltyEd" Content="Пенальти"/>
+                    <CheckBox x:Name="IsAutogoalEd" Content="Автогол"/>
+                    <Button x:Name="AcceptButtonEd" Content="Сохранить" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="AcceptButtonEd_Click"/>
+                    <Button x:Name="DeleteButtonEd" Content="Удалить запись" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="DeleteButtonEd_Click"/>
+                    <Button x:Name="BackButtonEd" Content="Вернуться к списку" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="BackButtonEd_Click"/>
+
+                </StackPanel>
+                </ScrollViewer>
+        </Grid>
+        <Rectangle x:Name="loadingRectangle" Visibility="Collapsed" Stroke="Black" Fill="#7F000000" Grid.RowSpan="2"/>
+        <ProgressRing x:Name="synchProgressRing" Background="Transparent" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Height="180" Width="180" FontFamily="Global User Interface" />
+    </Grid>
+   
+</Page>

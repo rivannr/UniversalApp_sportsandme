@@ -1,0 +1,1 @@
+C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\UniversalApp_sportsandme.Windows.csproj;neutral

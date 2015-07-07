@@ -1,0 +1,76 @@
+﻿<Page
+    x:Class="UniversalApp_sportsandme.ItemPage"
+    DataContext="{Binding DefaultViewModel.Item, RelativeSource={RelativeSource Self}}"
+    d:DataContext="{Binding Groups[0].Items[0], Source={d:DesignData Source=../UniversalApp_sportsandme.Shared/DataModel/SampleData/SampleData.json, Type=data:SampleDataSource}}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UniversalApp_sportsandme"
+    xmlns:data="using:UniversalApp_sportsandme.Data"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Transitions>
+        <TransitionCollection>
+            <NavigationThemeTransition>
+                <NavigationThemeTransition.DefaultNavigationTransitionInfo>
+                    <ContinuumNavigationTransitionInfo></ContinuumNavigationTransitionInfo>
+                </NavigationThemeTransition.DefaultNavigationTransitionInfo>
+            </NavigationThemeTransition>
+        </TransitionCollection>
+    </Page.Transitions>
+    <ScrollViewer>
+        <Grid x:Name="LayoutRoot">
+            <Grid.ChildrenTransitions>
+                <TransitionCollection>
+                    <EntranceThemeTransition/>
+                </TransitionCollection>
+            </Grid.ChildrenTransitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Title Panel -->
+            <StackPanel Grid.Row="0" Margin="19,0,0,0">
+                <TextBlock x:ConnectionId='4' x:Name="MainItemBack" Text="Назад" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"                             />
+                <!-- <TextBlock Text="{Binding team1.title}" Style="{ThemeResource HeaderTextBlockStyle}" Margin="0,-6.5,0,26.5" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+            -->
+                <StackPanel Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Left">
+
+                    <TextBlock Text="{Binding team1.title}" Style="{ThemeResource HeaderTextBlockStyle}" HorizontalAlignment="Left"/>
+                    <Image Source="{Binding team1.image_path }" Margin="5,0,5,0"  Height="25" Width="25" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <TextBlock Text="vs" Margin="5,0,5,0" Style="{ThemeResource HeaderTextBlockStyle}" HorizontalAlignment="Left" TextWrapping="Wrap"/>
+                    <Image Source="{Binding team2.image_path }" Margin="15,0,5,0" HorizontalAlignment="Left" Height="25" Width="25" VerticalAlignment="Center"/>
+                    <TextBlock Text="{Binding team2.title}" Style="{ThemeResource HeaderTextBlockStyle}" HorizontalAlignment="Left" TextWrapping="Wrap"/>
+
+                </StackPanel>
+                <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Left">
+                    <TextBlock Text="Начало " Margin="10,0,5,0" Style="{ThemeResource ListViewItemSubheaderTextBlockStyle}" HorizontalAlignment="Left" Height="22"/>
+                    <TextBlock Text="{Binding start_at}" Style="{ThemeResource ListViewItemSubheaderTextBlockStyle}" HorizontalAlignment="Left" Height="22"/>
+                </StackPanel>
+
+            </StackPanel>
+
+            <!--TODO: Content should be placed within the following grid 
+                  to show details for the current item -->
+            <Grid Grid.Row="1" x:Name="ContentRoot" Tag="{Binding id}" Margin="19,9.5,19,0">
+                <StackPanel Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
+                    <Button x:ConnectionId='1' x:Name="MatchPlayer" Content="Участие в матче" BorderThickness="0" Margin="0,5,0,0"                           />
+                    <Button x:ConnectionId='2' x:Name="AdditionButton"  Content="Доп. Информация" BorderThickness="0" Margin="0,5,0,0"                             />
+                    <Button x:ConnectionId='3' x:Name="IncidentsButton" Content="Инциденты и травмы" BorderThickness="0" Margin="0,5,0,0"                               />
+                    <Button Content="Голы матча" BorderThickness="0" Margin="0,5,0,0"/>
+                    <Button Content="Желтые карточки " BorderThickness="0" Margin="0,5,0,0"/>
+                    <Button Content="Красные карточки" BorderThickness="0" Margin="0,5,0,0"/>
+                    <Button Content="Пропущенные вратарем голы" BorderThickness="0" Margin="0,5,0,0"/>
+                    <Button Content="Замены в матче" BorderThickness="0" Margin="0,5,0,0"/>
+                    <Button Content="Незабитые пенальти" BorderThickness="0" Margin="0,5,0,0"/>
+                    <Button Content="Послематчые пенальти" BorderThickness="0" Margin="0,5,0,5"/>
+                    <Button Content="Промежуточные результаты" BorderThickness="0" Margin="0,5,0,0"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </ScrollViewer>
+</Page>
+

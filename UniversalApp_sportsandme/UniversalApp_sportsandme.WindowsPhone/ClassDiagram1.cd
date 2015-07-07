@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="UniversalApp_sportsandme.App">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAIAAg=</HashCode>
+      <FileName>C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UniversalApp_sportsandme.HubPage">
+    <Position X="5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CQAAAAQAAAACQAAAAAAAAAQAABAAAAQAAQAAAAEAAEA=</HashCode>
+      <FileName>HubPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UniversalApp_sportsandme.ItemPage">
+    <Position X="6.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAQAAAACQAAAAAAAAAQAAAAAAAQAAAAAAAEAAEA=</HashCode>
+      <FileName>ItemPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UniversalApp_sportsandme.SectionPage">
+    <Position X="8.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CQAAAAQAAAACQAAAAAAAAAQAAAAAAAQAAAAAAAEAAEA=</HashCode>
+      <FileName>SectionPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UniversalApp_sportsandme.Common.NavigationHelper">
+    <Position X="2.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAUAAQAAAACAAIRAQAAAQAAAUAAAgAAAABAAk=</HashCode>
+      <FileName>C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\Common\NavigationHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UniversalApp_sportsandme.Common.LoadStateEventArgs">
+    <Position X="10.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\Common\NavigationHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UniversalApp_sportsandme.Common.SaveStateEventArgs">
+    <Position X="10.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\Common\NavigationHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UniversalApp_sportsandme.Common.ObservableDictionary" BaseTypeListCollapsed="true">
+    <Position X="20.5" Y="2.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="UniversalApp_sportsandme.Common.ObservableDictionary.ObservableDictionaryChangedEventArgs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\Common\ObservableDictionary.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CCIAAABAAAAEABAQCAAABAQBAAAAAAAAAAAgAABQIAA=</HashCode>
+      <FileName>C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\Common\ObservableDictionary.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="UniversalApp_sportsandme.Common.RelayCommand" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQEACAAQAAECAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\Common\RelayCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="UniversalApp_sportsandme.Common.SuspensionManager">
+    <Position X="12.5" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAaIAASCBEAAAICAAAAAIAAAAAAAAAAIAAAAhA=</HashCode>
+      <FileName>C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\Common\SuspensionManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UniversalApp_sportsandme.Common.SuspensionManagerException">
+    <Position X="10.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\Common\SuspensionManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UniversalApp_sportsandme.Data.SampleDataItem">
+    <Position X="15.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAgAEAEQAAAAIAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\DataModel\SampleDataSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UniversalApp_sportsandme.Data.SampleDataGroup">
+    <Position X="17" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgCEAEQAAAAIAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\DataModel\SampleDataSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UniversalApp_sportsandme.Data.SampleDataSource">
+    <Position X="18.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAEAAAAAAAAAAAAIAAoAAAABAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\DataModel\SampleDataSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Delegate Name="UniversalApp_sportsandme.Common.LoadStateEventHandler" Collapsed="true">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\Common\NavigationHelper.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="UniversalApp_sportsandme.Common.SaveStateEventHandler" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Ivan\Source\Workspaces\MobileApp_study\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\Common\NavigationHelper.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,139 @@
+﻿<Page
+    x:Class="UniversalApp_sportsandme.HubPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UniversalApp_sportsandme"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    d:DataContext="{Binding Source={d:DesignData Source=../UniversalApp_sportsandme.Shared/DataModel/SampleData/MatchesActual.json, Type=data:SampleDataSource}}"
+    xmlns:data="using:UniversalApp_sportsandme.Data"
+    mc:Ignorable="d" Foreground="White" Background="#FF008AFF" FontFamily="Global User Interface">
+    <Page.BottomAppBar>
+        <CommandBar Visibility="Visible">
+            <AppBarButton x:ConnectionId='1' x:Name="HomeAppButton" Label="к турнирам" Icon="Home"  FontFamily="Global User Interface"                            />
+            <CommandBar.SecondaryCommands>
+                <AppBarButton x:ConnectionId='2' x:Name="SynchAppButton" Label="Синхронизация" Icon="Refresh"                             />
+                <AppBarButton x:ConnectionId='3' x:Name="LogoutAppButton" Label="Сменить пользователя" Icon="OtherUser"                               />
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Default">
+                    <ImageBrush x:Key="HubBackgroundImageBrush" ImageSource="Assets/HubBackground.png"/>
+                </ResourceDictionary>
+                <ResourceDictionary x:Key="HighContrast">
+                    <ImageBrush x:Key="HubBackgroundImageBrush" ImageSource="{x:Null}"/>
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+
+            
+            
+            <DataTemplate x:Key="HubSectionHeaderTemplate">
+                <TextBlock Margin="0,0,0,-9.5" Text="{Binding}" FontSize="24" FontFamily="Global User Interface"/>
+            </DataTemplate>
+
+
+
+            <DataTemplate x:Key="StandardDoubleLineItemTemplate">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Background="{ThemeResource ListViewItemPlaceholderBackgroundThemeBrush}" Margin="0,9.5,0,0" Grid.Column="0" HorizontalAlignment="Left">
+                        
+                    </Border>
+                    <StackPanel Grid.Column="1" Margin="14.5,0,0,0">
+                        <TextBlock Text="{Binding id}"  FontFamily="Global User Interface"/>
+                        <TextBlock Text="{Binding id}"  FontFamily="Global User Interface"/>
+                    </StackPanel>
+                </Grid>
+            </DataTemplate>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <Grid x:Name="LayoutRoot" Margin="0,-26.667,0,-0.333" Background="#FF008AFF">
+        <Hub x:Name="Hub" Header="{Binding RoundInfo.name}" Background="{ThemeResource HubBackgroundImageBrush}" Margin="0,77,0,0">
+            <HubSection x:Uid="HubSectionActual" Header="АКТУАЛЬНЫЕ" DataContext="{Binding}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}" Width="500">
+                <DataTemplate>
+                    <ListView x:ConnectionId='5'
+                        ItemsSource="{Binding ActualMatches}"
+                        IsItemClickEnabled="True"
+                                                          >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Vertical">
+                                    <Grid Margin="0,10,0,0" Height="206" Width="352" Background="#19494949">
+                                        <Image Source="{Binding team1.image_path }" HorizontalAlignment="Left" Height="100" Margin="0,10,0,0" VerticalAlignment="Top" Width="100"/>
+
+                                        <Grid Margin="112,30,187,130">
+                                            <TextBlock HorizontalAlignment="Center"  TextWrapping="Wrap" Text="{Binding goals1}" VerticalAlignment="Top" FontSize="48" FontFamily="Segoe WP Black" />
+                                        </Grid>
+                                        <TextBlock HorizontalAlignment="Left"  TextWrapping="Wrap" Text=":" VerticalAlignment="Top" FontSize="48" FontFamily="Segoe WP Black" Margin="165,30,0,0"/>
+                                        <Grid Margin="175,30,124,130">
+                                            <TextBlock TextWrapping="Wrap" Text="{Binding goals2}" VerticalAlignment="Top" FontSize="48" FontFamily="Segoe WP Black" HorizontalAlignment="Center"/>
+                                        </Grid>
+
+
+                                        <Image Source="{Binding team2.image_path }" HorizontalAlignment="Left" Height="100" Margin="237,10,0,0" VerticalAlignment="Top" Width="100"/>
+                                        <TextBlock HorizontalAlignment="Left" Margin="0,110,0,0" TextWrapping="Wrap" Text="{Binding team1.title}" VerticalAlignment="Top" FontSize="22" Height="68" Width="115"/>
+                                        <TextBlock HorizontalAlignment="Left" Margin="237,110,0,0" TextWrapping="Wrap" Text="{Binding team2.title}" VerticalAlignment="Top" FontSize="22" Height="68" Width="115"/>
+                                        <TextBlock HorizontalAlignment="Left" Margin="0,183,0,0" TextWrapping="Wrap" Text="{Binding start_at}" VerticalAlignment="Top" FontSize="18" Width="352" FontFamily="Global User Interface"/>
+                                        <TextBlock HorizontalAlignment="Left" Margin="120,156,0,0" TextWrapping="Wrap"  Text="Начало матча" VerticalAlignment="Top" FontSize="18"/>
+                                    </Grid>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </DataTemplate>
+            </HubSection>
+            <HubSection x:Uid="HubSectionPast" Header="ПРОШЕДШИЕ" DataContext="{Binding}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}" Width="500">
+                <DataTemplate>
+                    <ListView x:ConnectionId='4'
+                        ItemsSource="{Binding PastMatches}"
+                        IsItemClickEnabled="True"
+                                                          >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Vertical">
+                                    <Grid Margin="0,10,0,0" Height="206" Width="352" Background="#19494949">
+                                    <Image Source="{Binding team1.image_path }" HorizontalAlignment="Left" Height="100" Margin="0,10,0,0" VerticalAlignment="Top" Width="100"/>
+
+                                        <Grid Margin="112,30,187,130">
+                                            <TextBlock HorizontalAlignment="Center"  TextWrapping="Wrap" Text="{Binding goals1}" VerticalAlignment="Top" FontSize="48" FontFamily="Segoe WP Black" />
+                                        </Grid>
+                                        <TextBlock HorizontalAlignment="Left"  TextWrapping="Wrap" Text=":" VerticalAlignment="Top" FontSize="48" FontFamily="Segoe WP Black" Margin="165,30,0,0"/>
+                                        <Grid Margin="175,30,124,130">
+                                            <TextBlock TextWrapping="Wrap" Text="{Binding goals2}" VerticalAlignment="Top" FontSize="48" FontFamily="Segoe WP Black" HorizontalAlignment="Center"/>
+                                        </Grid>
+
+
+                                        <Image Source="{Binding team2.image_path }" HorizontalAlignment="Left" Height="100" Margin="237,10,0,0" VerticalAlignment="Top" Width="100"/>
+                                    <TextBlock HorizontalAlignment="Left" Margin="0,110,0,0" TextWrapping="Wrap" Text="{Binding team1.title}" VerticalAlignment="Top" FontSize="22" Height="68" Width="115"/>
+                                    <TextBlock HorizontalAlignment="Left" Margin="237,110,0,0" TextWrapping="Wrap" Text="{Binding team2.title}" VerticalAlignment="Top" FontSize="22" Height="68" Width="115"/>
+                                        <TextBlock HorizontalAlignment="Left" Margin="0,183,0,0" TextWrapping="Wrap" Text="{Binding start_at}" VerticalAlignment="Top" FontSize="18" Width="352" FontFamily="Global User Interface"/>
+                                        <TextBlock HorizontalAlignment="Left" Margin="120,156,0,0" TextWrapping="Wrap"  Text="Начало матча" VerticalAlignment="Top" FontSize="18"/>
+                                </Grid>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </DataTemplate>
+            </HubSection>
+        </Hub>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="userloginButton" BorderThickness="0" Content="{Binding userlogin}" HorizontalAlignment="Right" Margin="15,16,0,0" VerticalAlignment="Top"  FontSize="24"/>
+        </StackPanel>
+
+        <Rectangle x:Name="loadingRectangle" Visibility="Collapsed" Stroke="Black" Fill="#7F000000" Margin="0,0,0,-68"/>
+        <ProgressRing x:Name="synchProgressRing" Background="Transparent" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Height="180" Width="180" />
+    </Grid> 
+    
+</Page>
+    
+
+

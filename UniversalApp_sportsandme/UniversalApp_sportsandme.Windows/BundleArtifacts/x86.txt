@@ -1,0 +1,4 @@
+MainPackage=D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\bin\x86\Release\UniversalApp_sportsandme.Windows_1.1.0.4_Bundle\UniversalApp_sportsandme.Windows_1.1.0.4_x86.appx
+SymbolPackage=C:\Users\Ivan\Desktop\324234\W81\UniversalApp_sportsandme.Windows_1.1.0.4_Test\UniversalApp_sportsandme.Windows_1.1.0.4_x86.appxsym
+ResourcePack=D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\bin\x86\Release\UniversalApp_sportsandme.Windows_1.1.0.4_Bundle\UniversalApp_sportsandme.Windows_1.1.0.4_scale-140.appx
+ResourcePack=D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\bin\x86\Release\UniversalApp_sportsandme.Windows_1.1.0.4_Bundle\UniversalApp_sportsandme.Windows_1.1.0.4_scale-180.appx

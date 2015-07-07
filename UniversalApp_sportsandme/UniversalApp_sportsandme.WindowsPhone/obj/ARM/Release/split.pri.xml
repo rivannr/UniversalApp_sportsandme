@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="43576Rivannr.Sportandme" version="1.0" primary="true">
+		<Qualifiers>
+			<Scale>240</Scale>
+			<Theme>LIGHT, DARK</Theme>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="AdditionPage.xbf" uri="ms-resource://43576Rivannr.Sportandme/Files/AdditionPage.xbf">
+				<Candidate type="Path">
+					<Value>AdditionPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="App.xbf" uri="ms-resource://43576Rivannr.Sportandme/Files/App.xbf">
+				<Candidate type="Path">
+					<Value>App.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="AuthorizationPage.xbf" uri="ms-resource://43576Rivannr.Sportandme/Files/AuthorizationPage.xbf">
+				<Candidate type="Path">
+					<Value>AuthorizationPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="GoalsPage.xbf" uri="ms-resource://43576Rivannr.Sportandme/Files/GoalsPage.xbf">
+				<Candidate type="Path">
+					<Value>GoalsPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="HubPage.xbf" uri="ms-resource://43576Rivannr.Sportandme/Files/HubPage.xbf">
+				<Candidate type="Path">
+					<Value>HubPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ItemPage.xbf" uri="ms-resource://43576Rivannr.Sportandme/Files/ItemPage.xbf">
+				<Candidate type="Path">
+					<Value>ItemPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MatchMainInfoPage.xbf" uri="ms-resource://43576Rivannr.Sportandme/Files/MatchMainInfoPage.xbf">
+				<Candidate type="Path">
+					<Value>MatchMainInfoPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MatchPlayerPage.xbf" uri="ms-resource://43576Rivannr.Sportandme/Files/MatchPlayerPage.xbf">
+				<Candidate type="Path">
+					<Value>MatchPlayerPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MissedGoalPage.xbf" uri="ms-resource://43576Rivannr.Sportandme/Files/MissedGoalPage.xbf">
+				<Candidate type="Path">
+					<Value>MissedGoalPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="RedCardPage.xbf" uri="ms-resource://43576Rivannr.Sportandme/Files/RedCardPage.xbf">
+				<Candidate type="Path">
+					<Value>RedCardPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="RoundPage.xbf" uri="ms-resource://43576Rivannr.Sportandme/Files/RoundPage.xbf">
+				<Candidate type="Path">
+					<Value>RoundPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TournamentsPage.xbf" uri="ms-resource://43576Rivannr.Sportandme/Files/TournamentsPage.xbf">
+				<Candidate type="Path">
+					<Value>TournamentsPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="UniversalApp_sportsandme.WindowsPhone.xr.xml" uri="ms-resource://43576Rivannr.Sportandme/Files/UniversalApp_sportsandme.WindowsPhone.xr.xml">
+				<Candidate type="Path">
+					<Value>UniversalApp_sportsandme.WindowsPhone.xr.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="YellowCardPage.xbf" uri="ms-resource://43576Rivannr.Sportandme/Files/YellowCardPage.xbf">
+				<Candidate type="Path">
+					<Value>YellowCardPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="Assets">
+				<NamedResource name="DarkGray.png" uri="ms-resource://43576Rivannr.Sportandme/Files/Assets/DarkGray.png">
+					<Candidate type="Path">
+						<Value>Assets\DarkGray.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="HubBackground.png" uri="ms-resource://43576Rivannr.Sportandme/Files/Assets/HubBackground.png">
+					<Candidate qualifiers="Theme-LIGHT" isDefault="true" type="Path">
+						<Value>Assets\HubBackground.theme-light.png</Value>
+					</Candidate>
+					<Candidate qualifiers="Theme-DARK" isDefault="true" type="Path">
+						<Value>Assets\HubBackground.theme-dark.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="LightGray.png" uri="ms-resource://43576Rivannr.Sportandme/Files/Assets/LightGray.png">
+					<Candidate type="Path">
+						<Value>Assets\LightGray.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Logo.png" uri="ms-resource://43576Rivannr.Sportandme/Files/Assets/Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="logo_bez_nadpisi240.png" uri="ms-resource://43576Rivannr.Sportandme/Files/Assets/logo_bez_nadpisi240.png">
+					<Candidate type="Path">
+						<Value>Assets\logo_bez_nadpisi240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="MediumGray.png" uri="ms-resource://43576Rivannr.Sportandme/Files/Assets/MediumGray.png">
+					<Candidate type="Path">
+						<Value>Assets\MediumGray.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="noIm.png" uri="ms-resource://43576Rivannr.Sportandme/Files/Assets/noIm.png">
+					<Candidate type="Path">
+						<Value>Assets\noIm.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SmallLogo.png" uri="ms-resource://43576Rivannr.Sportandme/Files/Assets/SmallLogo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\SmallLogo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreen.png" uri="ms-resource://43576Rivannr.Sportandme/Files/Assets/SplashScreen.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\SplashScreen.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square150x150Logo.png" uri="ms-resource://43576Rivannr.Sportandme/Files/Assets/Square150x150Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\Square150x150Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square44x44Logo.png" uri="ms-resource://43576Rivannr.Sportandme/Files/Assets/Square44x44Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\Square44x44Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square71x71Logo.png" uri="ms-resource://43576Rivannr.Sportandme/Files/Assets/Square71x71Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\Square71x71Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://43576Rivannr.Sportandme/Files/Assets/StoreLogo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\StoreLogo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://43576Rivannr.Sportandme/Files/Assets/Wide310x150Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\Wide310x150Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WideLogo.png" uri="ms-resource://43576Rivannr.Sportandme/Files/Assets/WideLogo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\WideLogo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="DataModel">
+				<ResourceMapSubtree name="SampleData">
+					<NamedResource name="MatchesActual.json" uri="ms-resource://43576Rivannr.Sportandme/Files/DataModel/SampleData/MatchesActual.json">
+						<Candidate type="Path">
+							<Value>DataModel\SampleData\MatchesActual.json</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="MatchesPast.json" uri="ms-resource://43576Rivannr.Sportandme/Files/DataModel/SampleData/MatchesPast.json">
+						<Candidate type="Path">
+							<Value>DataModel\SampleData\MatchesPast.json</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Rounds3365.json" uri="ms-resource://43576Rivannr.Sportandme/Files/DataModel/SampleData/Rounds3365.json">
+						<Candidate type="Path">
+							<Value>DataModel\SampleData\Rounds3365.json</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Rounds3366.json" uri="ms-resource://43576Rivannr.Sportandme/Files/DataModel/SampleData/Rounds3366.json">
+						<Candidate type="Path">
+							<Value>DataModel\SampleData\Rounds3366.json</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="SampleData.json" uri="ms-resource://43576Rivannr.Sportandme/Files/DataModel/SampleData/SampleData.json">
+						<Candidate type="Path">
+							<Value>DataModel\SampleData\SampleData.json</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Tournaments9.json" uri="ms-resource://43576Rivannr.Sportandme/Files/DataModel/SampleData/Tournaments9.json">
+						<Candidate type="Path">
+							<Value>DataModel\SampleData\Tournaments9.json</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

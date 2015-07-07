@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>INKWIA_PC</Machine>
+    <WindowsUser>Ivan</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>43576Rivannr.Sportandme</PackageIdentityName>
+    <IntermediateOutputPath>D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\obj\x86\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>E1257D9BFA7B1D97993BD61CD930415DD6EE94EEF4EF94F00043E3E50EF2F1B1</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>43576Rivannr.Sportandme_1.1.0.4_x86__6pf4a3y2hdq9m</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>43576Rivannr.Sportandme_6pf4a3y2hdq9m!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>43576Rivannr.Sportandme</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=8319097C-46F0-405A-8954-6474031D2422</RegisteredPackagePublisher>
+    <RegisteredVersion>1.1.0.4</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\bin\x86\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-02T16:32:59.946</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\bin\x86\Debug\UniversalApp_sportsandme.Windows.exe">
+      <PackagePath>UniversalApp_sportsandme.Windows.exe</PackagePath>
+      <Modified>2015-07-02T16:32:59.808</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\packages\Newtonsoft.Json.6.0.8\lib\netcore45\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2015-06-25T22:45:58.765</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\packages\Microsoft.Net.Http.2.2.29\lib\win8\System.Net.Http.Extensions.dll">
+      <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
+      <Modified>2015-06-25T22:45:46.078</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\packages\Microsoft.Net.Http.2.2.29\lib\win8\System.Net.Http.Primitives.dll">
+      <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
+      <Modified>2015-06-25T22:45:46.720</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\Assets\HubBackground.theme-light.png">
+      <PackagePath>Assets\HubBackground.theme-light.png</PackagePath>
+      <Modified>2015-06-25T22:50:22.152</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-06-28T00:03:05.184</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-02T15:46:13.980</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-02T15:50:57.488</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\Assets\SplashScreen.scale-140.png">
+      <PackagePath>Assets\SplashScreen.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-02T15:52:21.374</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\Assets\SplashScreen.scale-180.png">
+      <PackagePath>Assets\SplashScreen.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-02T15:52:50.768</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\Assets\Square70x70Logo.scale-100.png">
+      <PackagePath>Assets\Square70x70Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-02T15:54:37.236</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\Assets\Square70x70Logo.scale-80.png">
+      <PackagePath>Assets\Square70x70Logo.scale-80.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-02T15:54:53.170</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-02T15:46:51.249</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\Assets\WideLogo.scale-100.png">
+      <PackagePath>Assets\WideLogo.scale-100.png</PackagePath>
+      <Modified>2015-06-25T22:46:28.657</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\HubBackground.theme-dark.png">
+      <PackagePath>HubBackground.theme-dark.png</PackagePath>
+      <Modified>2015-07-02T01:11:15.197</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\Assets\LightGray.png">
+      <PackagePath>Assets\LightGray.png</PackagePath>
+      <Modified>2015-06-25T22:46:06.111</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\Assets\MediumGray.png">
+      <PackagePath>Assets\MediumGray.png</PackagePath>
+      <Modified>2015-06-25T22:46:06.768</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\Assets\DarkGray.png">
+      <PackagePath>Assets\DarkGray.png</PackagePath>
+      <Modified>2015-06-25T22:46:05.859</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\DataModel\SampleData\Rounds3365.json">
+      <PackagePath>DataModel\SampleData\Rounds3365.json</PackagePath>
+      <Modified>2015-06-25T22:46:15.665</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\DataModel\SampleData\Tournaments9.json">
+      <PackagePath>DataModel\SampleData\Tournaments9.json</PackagePath>
+      <Modified>2015-06-25T22:46:18.170</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\DataModel\SampleData\Rounds3366.json">
+      <PackagePath>DataModel\SampleData\Rounds3366.json</PackagePath>
+      <Modified>2015-06-25T22:46:16.913</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\DataModel\SampleData\MatchesPast.json">
+      <PackagePath>DataModel\SampleData\MatchesPast.json</PackagePath>
+      <Modified>2015-06-25T22:46:14.274</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\DataModel\SampleData\MatchesActual.json">
+      <PackagePath>DataModel\SampleData\MatchesActual.json</PackagePath>
+      <Modified>2015-06-25T22:46:13.095</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\DataModel\SampleData\SampleData.json">
+      <PackagePath>DataModel\SampleData\SampleData.json</PackagePath>
+      <Modified>2015-06-25T22:46:17.868</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\bin\x86\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-07-02T16:10:55.752</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\bin\x86\Debug\AdditionPage.xbf">
+      <PackagePath>AdditionPage.xbf</PackagePath>
+      <Modified>2015-07-02T16:10:55.753</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\bin\x86\Debug\AuthorizationPage.xbf">
+      <PackagePath>AuthorizationPage.xbf</PackagePath>
+      <Modified>2015-07-02T16:10:55.753</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\bin\x86\Debug\GoalsPage.xbf">
+      <PackagePath>GoalsPage.xbf</PackagePath>
+      <Modified>2015-07-02T16:10:55.756</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\bin\x86\Debug\HubPage.xbf">
+      <PackagePath>HubPage.xbf</PackagePath>
+      <Modified>2015-07-02T16:10:55.759</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\bin\x86\Debug\InjuresAndIncidents.xbf">
+      <PackagePath>InjuresAndIncidents.xbf</PackagePath>
+      <Modified>2015-07-02T16:10:55.760</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\bin\x86\Debug\ItemPage.xbf">
+      <PackagePath>ItemPage.xbf</PackagePath>
+      <Modified>2015-07-02T16:32:59.357</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\bin\x86\Debug\MatchMainInfoPage.xbf">
+      <PackagePath>MatchMainInfoPage.xbf</PackagePath>
+      <Modified>2015-07-02T16:10:55.763</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\bin\x86\Debug\MatchPlayerPage.xbf">
+      <PackagePath>MatchPlayerPage.xbf</PackagePath>
+      <Modified>2015-07-02T16:32:59.361</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\bin\x86\Debug\MissedGoalPage.xbf">
+      <PackagePath>MissedGoalPage.xbf</PackagePath>
+      <Modified>2015-07-02T16:10:55.767</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\bin\x86\Debug\RedCardPage.xbf">
+      <PackagePath>RedCardPage.xbf</PackagePath>
+      <Modified>2015-07-02T16:10:55.771</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\bin\x86\Debug\RoundPage.xbf">
+      <PackagePath>RoundPage.xbf</PackagePath>
+      <Modified>2015-07-02T16:10:55.774</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\bin\x86\Debug\TournamentsPage.xbf">
+      <PackagePath>TournamentsPage.xbf</PackagePath>
+      <Modified>2015-07-02T16:10:55.777</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\bin\x86\Debug\YellowCardPage.xbf">
+      <PackagePath>YellowCardPage.xbf</PackagePath>
+      <Modified>2015-07-02T16:10:55.780</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\bin\x86\Debug\UniversalApp_sportsandme.Windows.xr.xml">
+      <PackagePath>UniversalApp_sportsandme.Windows.xr.xml</PackagePath>
+      <Modified>2015-07-02T01:49:31.346</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\bin\x86\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-07-02T16:32:59.887</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

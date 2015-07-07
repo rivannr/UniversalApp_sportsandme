@@ -1,0 +1,95 @@
+﻿<Page
+    x:Class="UniversalApp_sportsandme.RoundPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UniversalApp_sportsandme"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" FontFamily="Global User Interface">
+
+    <Page.BottomAppBar>
+        <CommandBar Visibility="Visible">
+            <AppBarButton x:Name="HomeAppButton" Label="к турнирам" Icon="Home"  FontFamily="Global User Interface" Click="HomeAppButton_Click"/>
+            <CommandBar.SecondaryCommands>
+                <AppBarButton x:Name="SynchAppButton" Label="Синхронизация" Icon="Refresh" Click="SynchAppButton_Click"/>
+                <AppBarButton x:Name="LogoutAppButton" Label="Сменить пользователя" Icon="OtherUser"  Click="LogoutAppButton_Click"/>
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+    <Page.Resources>
+
+        <ResourceDictionary>
+           
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Default">
+                    <ImageBrush x:Key="HubBackgroundImageBrush" ImageSource="Assets/HubBackground.png"/>
+                </ResourceDictionary>
+                <ResourceDictionary x:Key="HighContrast">
+                    <ImageBrush x:Key="HubBackgroundImageBrush" ImageSource="{x:Null}"/>
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+            
+            <DataTemplate x:Key="HubSectionHeaderTemplate">
+                <TextBlock Margin="0,0,0,-9.5" Text="{Binding Tournament.title, Converter={StaticResource ToUpperConv}}"  FontSize="24" FontFamily="Segoe WP"/>
+            </DataTemplate>
+
+
+
+            <DataTemplate x:Key="StandardDoubleLineItemTemplate">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Background="{ThemeResource ListViewItemPlaceholderBackgroundThemeBrush}" Margin="0,9.5,0,0" Grid.Column="0" HorizontalAlignment="Left">
+
+                    </Border>
+                    <StackPanel Grid.Column="1" Margin="14.5,0,0,0">
+                        <TextBlock Text="{Binding id}"  FontFamily="Global User Interface"/>
+                        <TextBlock Text="{Binding id}"  FontFamily="Global User Interface"/>
+                    </StackPanel>
+                </Grid>
+            </DataTemplate>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <Grid x:Name="LayoutRoot" Margin="0,-26.667,0,-0.333" Background="#FF008AFF">
+        <Hub x:Name="HubR" Header="ЭТАПЫ ТУРНИРА" Background="{ThemeResource HubBackgroundImageBrush}" Margin="0,77,0,0">
+            <HubSection Header="{Binding }" DataContext="{Binding}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
+                <DataTemplate>
+                    <ListView
+                        
+                        ItemsSource="{ Binding Tournament.RoundsList}"
+                        IsItemClickEnabled="True"
+                        ItemClick="RoundSelection_ItemClick">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Grid.Column="1" Orientation="Vertical">
+                                    <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Left">
+                                       
+                                        <TextBlock Text="{Binding name}"  HorizontalAlignment="Left" FontFamily="Segoe WP"/>
+
+                                    </StackPanel>
+
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </DataTemplate>
+            </HubSection>
+            
+        </Hub>
+        <StackPanel Orientation="Horizontal">
+       
+            <Button x:Name="userloginButton" BorderThickness="0" Content="{Binding userlogin}" HorizontalAlignment="Right" Margin="15,16,0,0" VerticalAlignment="Top"  FontSize="24"/>
+        </StackPanel>
+        <Rectangle x:Name="loadingRectangle" Visibility="Collapsed" Stroke="Black" Fill="#7F000000" Margin="0,0,0,-68"/>
+        <ProgressRing x:Name="synchProgressRing" Background="Transparent" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Height="180" Width="180" />
+    </Grid>
+
+</Page>
+    
+

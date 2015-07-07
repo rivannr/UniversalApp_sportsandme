@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Files>
+  <file>\UniversalApp_sportsandme.WindowsPhone.exe</file>
+  <file>\Newtonsoft.Json.dll</file>
+  <file>\System.Net.Http.Extensions.dll</file>
+  <file>\System.Net.Http.Primitives.dll</file>
+</Files>

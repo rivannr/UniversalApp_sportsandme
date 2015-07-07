@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="SharedProjectFile_SccProperties">
+    <SharedProjectFile_ProjectGuid>{7795e290-b774-4d05-87e0-6610e1e2cc80}</SharedProjectFile_ProjectGuid>
+    <SharedProjectFile_SccProjectName>SAK</SharedProjectFile_SccProjectName>
+    <SharedProjectFile_SccAuxPath>SAK</SharedProjectFile_SccAuxPath>
+    <SharedProjectFile_SccLocalPath>SAK</SharedProjectFile_SccLocalPath>
+    <SharedProjectFile_SccProvider>SAK</SharedProjectFile_SccProvider>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>d2a3b42e-d7a2-45e0-b928-a621399ba5f7</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>UniversalApp_sportsandme</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)DataModel\addition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataModel\DataSource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataModel\Goal.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataModel\HttpClientExtension.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataModel\Incident.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataModel\Injury.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataModel\match.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataModel\MatchPlayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataModel\RedCard.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataModel\Round.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataModel\YellowCard.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataModel\Tournament.cs" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\LightGray.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\MediumGray.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DarkGray.png" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\NavigationHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\RelayCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\SuspensionManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\ObservableDictionary.cs" />
+    <Content Include="$(MSBuildThisFileDirectory)DataModel\SampleData\Rounds3365.json" />
+    <Content Include="$(MSBuildThisFileDirectory)DataModel\SampleData\Tournaments9.json" />
+    <Content Include="$(MSBuildThisFileDirectory)DataModel\SampleData\Rounds3366.json" />
+    <Content Include="$(MSBuildThisFileDirectory)DataModel\SampleData\MatchesPast.json" />
+    <Content Include="$(MSBuildThisFileDirectory)DataModel\SampleData\MatchesActual.json" />
+    <Content Include="$(MSBuildThisFileDirectory)DataModel\SampleData\SampleData.json" />
+  </ItemGroup>
+</Project>

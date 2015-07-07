@@ -1,0 +1,106 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UniversalApp_sportsandme", "UniversalApp_sportsandme", "{E3AC5FB5-B111-4711-8AAB-4DBBA612819D}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UniversalApp_sportsandme.Shared", "UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\UniversalApp_sportsandme.Shared.shproj", "{D2A3B42E-D7A2-45E0-B928-A621399BA5F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversalApp_sportsandme.Windows", "UniversalApp_sportsandme\UniversalApp_sportsandme.Windows\UniversalApp_sportsandme.Windows.csproj", "{4130BECD-E290-46FA-A840-070FDCE711BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversalApp_sportsandme.WindowsPhone", "UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\UniversalApp_sportsandme.WindowsPhone.csproj", "{01BD79A7-C192-4B8F-A329-3179ACF4D501}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\UniversalApp_sportsandme.Shared.projitems*{d2a3b42e-d7a2-45e0-b928-a621399ba5f7}*SharedItemsImports = 13
+		UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\UniversalApp_sportsandme.Shared.projitems*{4130becd-e290-46fa-a840-070fdce711bb}*SharedItemsImports = 4
+		UniversalApp_sportsandme\UniversalApp_sportsandme.Shared\UniversalApp_sportsandme.Shared.projitems*{01bd79a7-c192-4b8f-a329-3179acf4d501}*SharedItemsImports = 4
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://rivannr.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = UniversalApp_sportsandme\\UniversalApp_sportsandme.Shared\\UniversalApp_sportsandme.Shared.projitems
+		SccProjectTopLevelParentUniqueName1 = UniversalApp_sportsandme.sln
+		SccProjectName1 = UniversalApp_sportsandme/UniversalApp_sportsandme.Shared
+		SccLocalPath1 = UniversalApp_sportsandme\\UniversalApp_sportsandme.Shared
+		SccProjectUniqueName2 = UniversalApp_sportsandme\\UniversalApp_sportsandme.Shared\\UniversalApp_sportsandme.Shared.shproj
+		SccProjectTopLevelParentUniqueName2 = UniversalApp_sportsandme.sln
+		SccProjectName2 = UniversalApp_sportsandme/UniversalApp_sportsandme.Shared
+		SccLocalPath2 = UniversalApp_sportsandme\\UniversalApp_sportsandme.Shared
+		SccProjectUniqueName3 = UniversalApp_sportsandme\\UniversalApp_sportsandme.Windows\\UniversalApp_sportsandme.Windows.csproj
+		SccProjectTopLevelParentUniqueName3 = UniversalApp_sportsandme.sln
+		SccProjectName3 = UniversalApp_sportsandme/UniversalApp_sportsandme.Windows
+		SccLocalPath3 = UniversalApp_sportsandme\\UniversalApp_sportsandme.Windows
+		SccProjectUniqueName4 = UniversalApp_sportsandme\\UniversalApp_sportsandme.WindowsPhone\\UniversalApp_sportsandme.WindowsPhone.csproj
+		SccProjectTopLevelParentUniqueName4 = UniversalApp_sportsandme.sln
+		SccProjectName4 = UniversalApp_sportsandme/UniversalApp_sportsandme.WindowsPhone
+		SccLocalPath4 = UniversalApp_sportsandme\\UniversalApp_sportsandme.WindowsPhone
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4130BECD-E290-46FA-A840-070FDCE711BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4130BECD-E290-46FA-A840-070FDCE711BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4130BECD-E290-46FA-A840-070FDCE711BB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4130BECD-E290-46FA-A840-070FDCE711BB}.Debug|ARM.ActiveCfg = Debug|ARM
+		{4130BECD-E290-46FA-A840-070FDCE711BB}.Debug|ARM.Build.0 = Debug|ARM
+		{4130BECD-E290-46FA-A840-070FDCE711BB}.Debug|ARM.Deploy.0 = Debug|ARM
+		{4130BECD-E290-46FA-A840-070FDCE711BB}.Debug|x64.ActiveCfg = Debug|x64
+		{4130BECD-E290-46FA-A840-070FDCE711BB}.Debug|x64.Build.0 = Debug|x64
+		{4130BECD-E290-46FA-A840-070FDCE711BB}.Debug|x64.Deploy.0 = Debug|x64
+		{4130BECD-E290-46FA-A840-070FDCE711BB}.Debug|x86.ActiveCfg = Debug|x86
+		{4130BECD-E290-46FA-A840-070FDCE711BB}.Debug|x86.Build.0 = Debug|x86
+		{4130BECD-E290-46FA-A840-070FDCE711BB}.Debug|x86.Deploy.0 = Debug|x86
+		{4130BECD-E290-46FA-A840-070FDCE711BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4130BECD-E290-46FA-A840-070FDCE711BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4130BECD-E290-46FA-A840-070FDCE711BB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4130BECD-E290-46FA-A840-070FDCE711BB}.Release|ARM.ActiveCfg = Release|ARM
+		{4130BECD-E290-46FA-A840-070FDCE711BB}.Release|ARM.Build.0 = Release|ARM
+		{4130BECD-E290-46FA-A840-070FDCE711BB}.Release|ARM.Deploy.0 = Release|ARM
+		{4130BECD-E290-46FA-A840-070FDCE711BB}.Release|x64.ActiveCfg = Release|x64
+		{4130BECD-E290-46FA-A840-070FDCE711BB}.Release|x64.Build.0 = Release|x64
+		{4130BECD-E290-46FA-A840-070FDCE711BB}.Release|x64.Deploy.0 = Release|x64
+		{4130BECD-E290-46FA-A840-070FDCE711BB}.Release|x86.ActiveCfg = Release|x86
+		{4130BECD-E290-46FA-A840-070FDCE711BB}.Release|x86.Build.0 = Release|x86
+		{4130BECD-E290-46FA-A840-070FDCE711BB}.Release|x86.Deploy.0 = Release|x86
+		{01BD79A7-C192-4B8F-A329-3179ACF4D501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01BD79A7-C192-4B8F-A329-3179ACF4D501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01BD79A7-C192-4B8F-A329-3179ACF4D501}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{01BD79A7-C192-4B8F-A329-3179ACF4D501}.Debug|ARM.ActiveCfg = Debug|ARM
+		{01BD79A7-C192-4B8F-A329-3179ACF4D501}.Debug|ARM.Build.0 = Debug|ARM
+		{01BD79A7-C192-4B8F-A329-3179ACF4D501}.Debug|ARM.Deploy.0 = Debug|ARM
+		{01BD79A7-C192-4B8F-A329-3179ACF4D501}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{01BD79A7-C192-4B8F-A329-3179ACF4D501}.Debug|x86.ActiveCfg = Debug|x86
+		{01BD79A7-C192-4B8F-A329-3179ACF4D501}.Debug|x86.Build.0 = Debug|x86
+		{01BD79A7-C192-4B8F-A329-3179ACF4D501}.Debug|x86.Deploy.0 = Debug|x86
+		{01BD79A7-C192-4B8F-A329-3179ACF4D501}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01BD79A7-C192-4B8F-A329-3179ACF4D501}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01BD79A7-C192-4B8F-A329-3179ACF4D501}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{01BD79A7-C192-4B8F-A329-3179ACF4D501}.Release|ARM.ActiveCfg = Release|ARM
+		{01BD79A7-C192-4B8F-A329-3179ACF4D501}.Release|ARM.Build.0 = Release|ARM
+		{01BD79A7-C192-4B8F-A329-3179ACF4D501}.Release|ARM.Deploy.0 = Release|ARM
+		{01BD79A7-C192-4B8F-A329-3179ACF4D501}.Release|x64.ActiveCfg = Release|Any CPU
+		{01BD79A7-C192-4B8F-A329-3179ACF4D501}.Release|x86.ActiveCfg = Release|x86
+		{01BD79A7-C192-4B8F-A329-3179ACF4D501}.Release|x86.Build.0 = Release|x86
+		{01BD79A7-C192-4B8F-A329-3179ACF4D501}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D2A3B42E-D7A2-45E0-B928-A621399BA5F7} = {E3AC5FB5-B111-4711-8AAB-4DBBA612819D}
+		{4130BECD-E290-46FA-A840-070FDCE711BB} = {E3AC5FB5-B111-4711-8AAB-4DBBA612819D}
+		{01BD79A7-C192-4B8F-A329-3179ACF4D501} = {E3AC5FB5-B111-4711-8AAB-4DBBA612819D}
+	EndGlobalSection
+EndGlobal

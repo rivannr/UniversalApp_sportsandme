@@ -1,0 +1,4 @@
+MainPackage=D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\bin\ARM\Release\UniversalApp_sportsandme.WindowsPhone_1.1.0.1_Bundle\UniversalApp_sportsandme.WindowsPhone_1.1.0.1_ARM.appx
+SymbolPackage=C:\Users\Ivan\Desktop\324234\UniversalApp_sportsandme.WindowsPhone_1.1.0.1_Test\UniversalApp_sportsandme.WindowsPhone_1.1.0.1_ARM.appxsym
+ResourcePack=D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\bin\ARM\Release\UniversalApp_sportsandme.WindowsPhone_1.1.0.1_Bundle\UniversalApp_sportsandme.WindowsPhone_1.1.0.1_scale-100.appx
+ResourcePack=D:\111\UniversalApp_sportsandme\UniversalApp_sportsandme\UniversalApp_sportsandme.WindowsPhone\bin\ARM\Release\UniversalApp_sportsandme.WindowsPhone_1.1.0.1_Bundle\UniversalApp_sportsandme.WindowsPhone_1.1.0.1_scale-140.appx

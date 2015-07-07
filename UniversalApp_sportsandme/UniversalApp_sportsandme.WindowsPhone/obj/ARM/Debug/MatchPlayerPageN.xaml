@@ -1,0 +1,49 @@
+﻿<Page
+    x:Class="UniversalApp_sportsandme.MatchPlayerPageN"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UniversalApp_sportsandme"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
+            <TextBlock Text="MY APPLICATION" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+            <TextBlock Text="page title" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}" FontFamily="Global User Interface"/>
+        </StackPanel>
+
+        <!--TODO: Content should be placed within the following grid-->
+        <Grid Grid.Row="1" x:Name="PlayerItemGrid" Margin="19,9.5,19,0">
+            <CheckBox x:Name="ParticipateCB" Content="" HorizontalAlignment="Left" Margin="140,10,0,0" VerticalAlignment="Top"  HorizontalContentAlignment="Left"/>
+            <RadioButton x:Name="IsCaptainRB" Content="" GroupName="IsCaptain" HorizontalAlignment="Left" Margin="180,10,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="FirstPosRB" Content="" HorizontalAlignment="Left" Margin="220,10,-17,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="SecondPosRB" Content="" HorizontalAlignment="Left" Margin="260,10,-54,0" VerticalAlignment="Top" FontFamily="Global User Interface"/>
+            <RadioButton x:Name="ThirdPosRB" Content="" HorizontalAlignment="Left" Margin="300,10,-91,0" VerticalAlignment="Top"/>
+            <CheckBox x:Name="IsGoalkeeper" Content="" HorizontalAlignment="Left" Margin="340,10,-133,0" VerticalAlignment="Top" FontFamily="Global User Interface"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Дилан Моран" VerticalAlignment="Top" FontSize="24" FontFamily="Segoe WP" Width="144" Height="64"/>
+            <TextBlock HorizontalAlignment="Left" Margin="180,57,0,0" TextWrapping="Wrap" Text="____________" VerticalAlignment="Top"/>
+        </Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="158,105,0,0" TextWrapping="Wrap" Text="УЧ" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.489,0.546" Grid.RowSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="197,105,0,0" TextWrapping="Wrap" Text="КП" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.489,0.546" Grid.RowSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="236,105,0,0" TextWrapping="Wrap" Text="П1" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.489,0.546" Grid.RowSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="276,105,0,0" TextWrapping="Wrap" Text="П2" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.489,0.546" Grid.RowSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="316,105,0,0" TextWrapping="Wrap" Text="П3" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.489,0.546" Grid.RowSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="351,105,0,0" TextWrapping="Wrap" Text="ВТ" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="1.722,0.431" Grid.RowSpan="2"/>
+    </Grid>
+</Page>
+

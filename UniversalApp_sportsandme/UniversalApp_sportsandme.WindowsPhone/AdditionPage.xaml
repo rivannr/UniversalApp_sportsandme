@@ -1,0 +1,56 @@
+﻿<Page
+    x:Class="UniversalApp_sportsandme.AdditionPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UniversalApp_sportsandme"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    DataContext="{Binding DefaultViewModel.Addition, RelativeSource={RelativeSource Self}}"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
+            <Button x:Name="MainItemBack" BorderThickness="0" Content="Назад" Margin="-21,0,0,0" Click="CancelButton_Click" FontSize="24"/>
+            <TextBlock Text="ДОП. ИНФОРМАЦИЯ" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}" FontFamily="Global User Interface"/>
+        </StackPanel>
+
+        <!--TODO: Content should be placed within the following grid-->
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
+            <Button x:Name="CreateNew" Content="Добавить доп. информацию" Click="CreateNew_Click"  Margin="10,136,0,308" Width="340" HorizontalAlignment="Stretch"/>
+            <Button x:Name="BackButton" Content="Назад" Click="CancelButton_Click"  Margin="10,195,0,249" Width="340" HorizontalAlignment="Stretch"/>
+            <StackPanel Visibility="Collapsed" x:Name="dataPanel">
+                <TextBlock Text="Время начала матча (доп)" FontSize="16" FontFamily="Segoe UI Semibold" />
+                <TimePicker x:Name="StartClock" MinuteIncrement="5" ClockIdentifier="24HourClock"/>
+                <TextBlock Text="Время конца матча" FontSize="16" FontFamily="Segoe UI Semibold" />
+                <TimePicker x:Name="EndClock" MinuteIncrement="5" ClockIdentifier="24HourClock"/>
+                <TextBlock Text="Минуты длительности перерыва" FontSize="16" FontFamily="Segoe UI Semibold" />
+                <TextBox  x:Name="NumberTextBoxBreaktime" InputScope="Number" Margin="0" TextWrapping="Wrap" Text="{Binding half_time_minutes}" PlaceholderText="0" VerticalAlignment="Stretch" TextChanged="NumberTextBoxBreaktime_TextChanged"/>
+                <TextBlock Text="Количество зрителей" FontSize="16" />
+                <TextBox  x:Name="NumberTextBoxAttendance" InputScope="Number" Margin="0" TextWrapping="Wrap" Text="{Binding attendance}" PlaceholderText="0" VerticalAlignment="Stretch" TextChanged="NumberTextBoxAttendance_TextChanged"/>
+                <TextBlock Text="Номер матча" FontSize="16" FontFamily="Segoe UI Semibold" />
+                <TextBox  x:Name="NumberTextBoxMatchNumber" InputScope="Number" Margin="0" TextWrapping="Wrap" Text="{Binding match_number}" PlaceholderText="0" VerticalAlignment="Stretch" TextChanged="NumberTextBoxMatchNumber_TextChanged"/>
+                <StackPanel Orientation="Horizontal" Height="100" Margin="0,0,-0.333,0">
+                <Button x:Name="CancelButton" Content="Назад" Margin="0, 10, 10, 10" Click="CancelButton_Click" />
+                    <Button x:Name="AcceptButton" Margin="10" Content="Сохранить" Click="AcceptButton_Click" HorizontalAlignment="Right" />
+                </StackPanel>
+                <Button x:Name="DeleteButton" Content="Удалить запись" Click="DeleteButton_Click"  Width="362" Margin="0,20,-0.333,0"  HorizontalAlignment="Stretch" />
+            </StackPanel>
+            <Rectangle x:Name="loadingRectangle" Visibility="Visible" Stroke="Black" Fill="#7F000000" Margin="0,0,0,-68"/>
+            <ProgressRing x:Name="synchProgressRing" Background="Transparent" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Height="180" Width="180" />
+        </Grid>
+    </Grid>
+</Page>

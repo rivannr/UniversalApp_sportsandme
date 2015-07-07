@@ -1,0 +1,90 @@
+﻿<Page
+    x:Class="UniversalApp_sportsandme.MatchPlayerPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UniversalApp_sportsandme"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <UserControl.Resources>
+        <local:IsCaptainBoolToString x:Key="IsCaptainBoolToString"/>
+        <local:IsGoalkeeperBoolToString x:Key="IsGoalkeeperBoolToString"/>
+        <local:TeamsheetForPos1ToBool x:Key="TeamsheetForPos1ToBool"/>
+        <local:TeamsheetForPos2ToBool x:Key="TeamsheetForPos2ToBool"/>
+        <local:TeamsheetForPos3ToBool x:Key="TeamsheetForPos3ToBool"/>
+        <local:BoolToVisibleProp x:Key="BoolToVisibleProp"/>
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" MinHeight="254"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
+            <Button x:Name="MainItemBack" BorderThickness="0" Content="Назад" Margin="-21,15,0,0" Click="CancelButton_Click" FontSize="24"/>
+            <TextBlock Text="СОСТАВ КОМАНД В МАТЧЕ" Margin="0,10,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}"  FontFamily="Global User Interface"/>
+
+
+            <ComboBox x:Name="TeamComboBox" SelectionChanged="TeamComboBox_SelectionChanged" PlaceholderText="Добавить фильтр по команде" FontFamily="Global User Interface" Margin="100,0">
+                <ComboBoxItem Tag="{Binding Match.team1.id}" Content="{Binding Match.team1.title}" HorizontalAlignment="Left" Width="356.666656494141"/>
+                <ComboBoxItem Tag="{Binding Match.team2.id}" Content="{Binding Match.team2.title}" HorizontalAlignment="Left" Width="356.666656494141" FontFamily="Global User Interface"/>
+            </ComboBox>
+            <Button x:Name="SaveButton" Content="Сохранить" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="SaveButton_Click" Height="42" Margin="97,0,97,0" />
+
+        </StackPanel>
+
+        <!--TODO: Content should be placed within the following grid-->
+
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,10,19,-1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="155*"/>
+                <ColumnDefinition Width="207*"/>
+            </Grid.ColumnDefinitions>
+            <ScrollViewer Grid.ColumnSpan="2">
+                <StackPanel x:Name="viewPanel" Visibility="Visible">
+
+                    <ListView
+                        x:Name="mainListView"
+                        ItemsSource="{Binding dataGroupsMatchPlayer}"
+                        IsItemClickEnabled="False">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Grid.Row="1" x:Name="PlayerItemGrid" Margin="0,0,0,0">
+                                    <CheckBox x:Name="ParticipateCB" IsChecked="{Binding showProperties, Mode=TwoWay}" Content="" HorizontalAlignment="Left" Margin="300,10,0,0" VerticalAlignment="Top"  HorizontalContentAlignment="Left" FontFamily="Global User Interface"/>
+                                    <RadioButton x:Name="IsCaptainRB" IsChecked="{Binding matchPlayer.Is_capitanValue, Mode=TwoWay}" Visibility="{Binding showProperties, Converter={StaticResource BoolToVisibleProp}}" Content="" GroupName="IsCaptain" HorizontalAlignment="Left" Margin="360,10,0,0" VerticalAlignment="Top" FontFamily="Global User Interface" Unchecked="IsCaptainRB_Unchecked"/>
+                                    <RadioButton x:Name="FirstPosRB" IsChecked="{Binding matchPlayer.TeamsheetValue, Converter={StaticResource TeamsheetForPos1ToBool}, Mode=TwoWay}" Visibility="{Binding showProperties, Converter={StaticResource BoolToVisibleProp}}"  Content="" HorizontalAlignment="Left" Margin="420,10,-17,0" VerticalAlignment="Top" FontFamily="Global User Interface"/>
+                                    <RadioButton x:Name="SecondPosRB" IsChecked="{Binding matchPlayer.TeamsheetValue, Converter={StaticResource TeamsheetForPos2ToBool}, Mode=TwoWay}" Visibility="{Binding showProperties, Converter={StaticResource BoolToVisibleProp}}"  Content="" HorizontalAlignment="Left" Margin="460,10,-54,0" VerticalAlignment="Top" FontFamily="Global User Interface"/>
+                                    <RadioButton x:Name="ThirdPosRB" IsChecked="{Binding matchPlayer.TeamsheetValue, Converter={StaticResource TeamsheetForPos3ToBool}, Mode=TwoWay}" Visibility="{Binding showProperties, Converter={StaticResource BoolToVisibleProp}}"  Content="" HorizontalAlignment="Left" Margin="500,10,-91,0" VerticalAlignment="Top"/>
+                                    <CheckBox x:Name="IsGoalkeeper" IsChecked="{Binding matchPlayer.Is_goalkeeperValue, Mode=TwoWay}" Visibility="{Binding showProperties, Converter={StaticResource BoolToVisibleProp}}"  Content="" HorizontalAlignment="Left" Margin="550,10,-133,0" VerticalAlignment="Top" FontFamily="Global User Interface"/>
+                                    <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="{Binding player.full_name}" VerticalAlignment="Top" FontSize="24" FontFamily="Global User Interface" Width="290" Height="64"/>
+                                    <TextBlock HorizontalAlignment="Left" Margin="380,57,0,0" TextWrapping="Wrap" Text="____________________" VerticalAlignment="Top" FontFamily="Global User Interface"/>
+                                </Grid>
+                                
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="313,215,0,0" TextWrapping="Wrap" Text="УЧ" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.549,0.525" Height="29" Width="39"/>
+        <TextBlock HorizontalAlignment="Left" Margin="363,215,0,0" TextWrapping="Wrap" Text="КПТН" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.489,0.546" Height="29" Width="62"/>
+        <TextBlock HorizontalAlignment="Left" Margin="437,215,0,0" TextWrapping="Wrap" Text="ОС" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.489,0.546" Height="29" Width="35"/>
+        <TextBlock HorizontalAlignment="Left" Margin="482,215,0,0" TextWrapping="Wrap" Text="ЗС" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.489,0.546" Height="29" Width="30"/>
+        <TextBlock HorizontalAlignment="Left" Margin="521,215,0,0" TextWrapping="Wrap" Text="ПК" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.489,0.546" Height="29" Width="41"/>
+        <TextBlock HorizontalAlignment="Left" Margin="562,215,0,0" TextWrapping="Wrap" Text="ВРТ" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="1.722,0.431" Height="29" Width="40"/>
+        <Rectangle x:Name="loadingRectangle" Visibility="Collapsed" Stroke="Black" Fill="#7F000000" Grid.RowSpan="2"/>
+        <ProgressRing x:Name="synchProgressRing" Background="Transparent" HorizontalAlignment="Center" Margin="593,40,593,34" VerticalAlignment="Center" Height="180" Width="180" />
+    </Grid>
+
+</Page>

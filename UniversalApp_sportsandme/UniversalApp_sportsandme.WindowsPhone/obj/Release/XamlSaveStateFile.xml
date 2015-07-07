@@ -1,0 +1,8 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="c:\users\ivan\source\workspaces\mobileapp_study\universalapp_sportsandme\universalapp_sportsandme\universalapp_sportsandme.windowsphone\obj\release\intermediatexaml\universalapp_sportsandme.windowsphone.exe" HashGuid="d8f04d5b-f181-5836-edcb-096f53bf76fe" />
+    <ReferenceAssembly PathName="d:\111\universalapp_sportsandme\packages\newtonsoft.json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\newtonsoft.json.dll" HashGuid="225745d8-3693-ad6f-ebd5-8845d81f8e0f" />
+    <ReferenceAssembly PathName="d:\111\universalapp_sportsandme\packages\microsoft.net.http.2.2.29\lib\wpa81\system.net.http.extensions.dll" HashGuid="794366f8-cc6d-f0fa-3d07-33b45136e193" />
+    <ReferenceAssembly PathName="d:\111\universalapp_sportsandme\packages\microsoft.net.http.2.2.29\lib\wpa81\system.net.http.primitives.dll" HashGuid="7b71418d-e056-7613-c839-85fb8f6472a6" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>

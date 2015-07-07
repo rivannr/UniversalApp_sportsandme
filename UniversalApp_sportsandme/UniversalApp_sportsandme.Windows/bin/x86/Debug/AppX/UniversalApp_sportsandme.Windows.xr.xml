@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="DefaultViewModel" />
+    <RootPropertyPathName Name="Addition" />
+    <RootPropertyPathName Name="match_number" />
+    <RootPropertyPathName Name="attendance" />
+    <RootPropertyPathName Name="half_time_minutes" />
+    <RootPropertyPathName Name="Incidents" />
+    <RootPropertyPathName Name="full_name" />
+    <RootPropertyPathName Name="Match" />
+    <RootPropertyPathName Name="team2" />
+    <RootPropertyPathName Name="title" />
+    <RootPropertyPathName Name="team1" />
+    <RootPropertyPathName Name="dataGroupsMatchPlayer" />
+    <RootPropertyPathName Name="goal" />
+    <RootPropertyPathName Name="objectStatus" />
+    <RootPropertyPathName Name="Is_autogoalValue" />
+    <RootPropertyPathName Name="Is_penaltyValue" />
+    <RootPropertyPathName Name="Addition_minuteValue" />
+    <RootPropertyPathName Name="MinuteValue" />
+    <RootPropertyPathName Name="assName" />
+    <RootPropertyPathName Name="team" />
+    <RootPropertyPathName Name="player" />
+    <RootPropertyPathName Name="id" />
+    <RootPropertyPathName Name="userlogin" />
+    <RootPropertyPathName Name="RoundInfo" />
+    <RootPropertyPathName Name="name" />
+    <RootPropertyPathName Name="PastMatches" />
+    <RootPropertyPathName Name="start_at" />
+    <RootPropertyPathName Name="image_path" />
+    <RootPropertyPathName Name="goals2" />
+    <RootPropertyPathName Name="goals1" />
+    <RootPropertyPathName Name="ActualMatches" />
+    <RootPropertyPathName Name="incident" />
+    <RootPropertyPathName Name="note" />
+    <RootPropertyPathName Name="injury" />
+    <RootPropertyPathName Name="Item" />
+    <RootPropertyPathName Name="MatchInfo" />
+    <RootPropertyPathName Name="place" />
+    <RootPropertyPathName Name="_timePart" />
+    <RootPropertyPathName Name="time" />
+    <RootPropertyPathName Name="penalty2" />
+    <RootPropertyPathName Name="penalty1" />
+    <RootPropertyPathName Name="matchPlayer" />
+    <RootPropertyPathName Name="Is_goalkeeperValue" />
+    <RootPropertyPathName Name="showProperties" />
+    <RootPropertyPathName Name="TeamsheetValue" />
+    <RootPropertyPathName Name="Is_capitanValue" />
+    <RootPropertyPathName Name="redCard" />
+    <RootPropertyPathName Name="Is_two_yellowValue" />
+    <RootPropertyPathName Name="NoteValue" />
+    <RootPropertyPathName Name="Tournament" />
+    <RootPropertyPathName Name="RoundsList" />
+    <RootPropertyPathName Name="Tournaments" />
+    <RootPropertyPathName Name="location" />
+    <RootPropertyPathName Name="yellowCard" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.Application">
+      <RootProperty Name="Resources" />
+    </RootType>
+    <RootType FullName="UniversalApp_sportsandme.ToUpperConv" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Resources" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="BottomAppBar" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="RelativeSource" />
+      <RootProperty Name="Converter" />
+      <RootProperty Name="Mode" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.RelativeSource" />
+    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="ChildrenTransitions" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Tag" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+      <RootMethod Name="GetRowSpan" />
+      <RootMethod Name="SetRowSpan" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+      <RootMethod Name="GetColumnSpan" />
+      <RootMethod Name="SetColumnSpan" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.EntranceThemeTransition" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+      <RootProperty Name="MinHeight" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Tag" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="Height" />
+      <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ProgressRing">
+      <RootProperty Name="Background" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="FontFamily" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="FontStyle" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="RenderTransformOrigin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TimePicker">
+      <RootProperty Name="MinuteIncrement" />
+      <RootProperty Name="ClockIdentifier" />
+      <RootProperty Name="Time" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="InputScope" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="Header" />
+      <RootProperty Name="FontFamily" />
+      <RootEvent Name="TextChanged" />
+    </RootType>
+    <RootType FullName="UniversalApp_sportsandme.AdditionPage" />
+    <RootType FullName="Windows.UI.Xaml.Media.ImageBrush">
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="ImageSource" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Header" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.NullExtension" />
+    <RootType FullName="UniversalApp_sportsandme.AuthorizationPage" />
+    <RootType FullName="UniversalApp_sportsandme.IsAutogoalToString" />
+    <RootType FullName="UniversalApp_sportsandme.IsPenaltyToString" />
+    <RootType FullName="UniversalApp_sportsandme.StatusToString" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="Items" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="Margin" />
+      <RootEvent Name="SelectionChanged" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
+      <RootProperty Name="Content" />
+      <RootProperty Name="IsChecked" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBoxItem">
+      <RootProperty Name="Content" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Tag" />
+      <RootProperty Name="FontFamily" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="IsItemClickEnabled" />
+      <RootProperty Name="ItemTemplate" />
+      <RootEvent Name="ItemClick" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="UniversalApp_sportsandme.GoalsPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="PrimaryCommands" />
+      <RootProperty Name="SecondaryCommands" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
+      <RootProperty Name="Label" />
+      <RootProperty Name="Icon" />
+      <RootProperty Name="FontFamily" />
+      <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.ResourceDictionary">
+      <RootProperty Name="ThemeDictionaries" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Hub">
+      <RootProperty Name="Header" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Sections" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.HubSection">
+      <RootProperty Name="Header" />
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="HeaderTemplate" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="ContentTemplate" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Source" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="UniversalApp_sportsandme.HubPage" />
+    <RootType FullName="UniversalApp_sportsandme.InjuresAndIncidents" />
+    <RootType FullName="UniversalApp_sportsandme.ItemPage" />
+    <RootType FullName="UniversalApp_sportsandme.DateConverter" />
+    <RootType FullName="UniversalApp_sportsandme.TimeConverter" />
+    <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
+      <RootProperty Name="CalendarIdentifier" />
+      <RootProperty Name="Date" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="UniversalApp_sportsandme.MatchMainInfoPage" />
+    <RootType FullName="UniversalApp_sportsandme.IsCaptainBoolToString" />
+    <RootType FullName="UniversalApp_sportsandme.IsGoalkeeperBoolToString" />
+    <RootType FullName="UniversalApp_sportsandme.TeamsheetForPos1ToBool" />
+    <RootType FullName="UniversalApp_sportsandme.TeamsheetForPos2ToBool" />
+    <RootType FullName="UniversalApp_sportsandme.TeamsheetForPos3ToBool" />
+    <RootType FullName="UniversalApp_sportsandme.BoolToVisibleProp" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
+      <RootProperty Name="IsChecked" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="GroupName" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="FontFamily" />
+      <RootEvent Name="Unchecked" />
+    </RootType>
+    <RootType FullName="UniversalApp_sportsandme.MatchPlayerPage" />
+    <RootType FullName="UniversalApp_sportsandme.MissedGoalPage" />
+    <RootType FullName="UniversalApp_sportsandme.IsTwoYellowToString" />
+    <RootType FullName="UniversalApp_sportsandme.RedCardPage" />
+    <RootType FullName="UniversalApp_sportsandme.RoundPage" />
+    <RootType FullName="UniversalApp_sportsandme.TournamentsPage" />
+    <RootType FullName="UniversalApp_sportsandme.YellowCardPage" />
+  </Roots.RootTypes>
+</Roots>
